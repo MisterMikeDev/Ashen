@@ -1,0 +1,42 @@
+{
+    "author": "MrMikeDev",
+    "dependencies": {
+        "discord-arts": "0.6.1",
+        "discord.js": "14.15.3",
+        "dotenv": "16.3.1",
+        "fs": "0.0.1-security",
+        "path": "0.12.7"
+    },
+    "description": "Komi is a discord bot multifuncional.",
+    "devDependencies": {
+        "@jest/globals": "29.7.0",
+        "@types/cors": "2.8.14",
+        "@types/eslint": "8.44.3",
+        "@types/express": "4.17.18",
+        "@types/express-session": "1.17.8",
+        "@types/glob": "8.1.0",
+        "@types/node": "20.7.1",
+        "@typescript-eslint/eslint-plugin": "6.7.3",
+        "@typescript-eslint/parser": "6.7.3",
+        "chalk": "4.1.2",
+        "eslint": "8.50.0",
+        "eslint-config-prettier": "9.0.0",
+        "nodemon": "3.0.1",
+        "prettier": "3.0.3",
+        "ts-node": "10.9.1",
+        "typescript": "5.2.2"
+    },
+    "keywords": [],
+    "license": "MIT",
+    "main": "src/index.ts",
+    "name": "ashen",
+    "repository": "https://github.com/MisterMikeDev/Ashen",
+    "scripts": {
+        "start": "node dist/index.js",
+        "dev": "nodemon",
+        "dev:ts": "ts-node src/index.ts",
+        "build": "tsc",
+        "lint": "eslint ."
+    },
+    "version": "0.0.2"
+}
