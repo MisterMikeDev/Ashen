@@ -26,9 +26,9 @@ const StatusPresence = (Ashen: Ashen): ActivitiesOptions[] => [
 export const Config = {
     DiscordBot: {
         IdAuthor: "437308398845952001",
-        Client: process.env.BOT_CLIENT_ID ?? "",
-        ClientSecret: process.env.BOT_CLIENT_SECRET ?? "",
-        Token: process.env.BOT_TOKEN ?? "",
+        Client: process.env.ASHEN_CLIENT_ID ?? "",
+        ClientSecret: process.env.ASHEN_CLIENT_SECRET ?? "",
+        Token: process.env.ASHEN_TOKEN ?? "",
         Intents: [
             "Guilds",
             "GuildMembers",
