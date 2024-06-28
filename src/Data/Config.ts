@@ -11,15 +11,23 @@ const StatusActivity: ActivitiesOptions = {
 const StatusPresence = (Ashen: Ashen): ActivitiesOptions[] => [
     {
         ...StatusActivity,
-        name: "¡Hola! 👋"
-    },
-    {
-        ...StatusActivity,
-        name: "🌟 Viva Komi-san."
-    },
-    {
-        ...StatusActivity,
         name: "🌈 ¡Diviértete en Hikari's World! 🌈"
+    },
+    {
+        ...StatusActivity,
+        name: "🌟 ¡Únete a la comunidad de Akarui Hikari! 🌟"
+    },
+    {
+        ...StatusActivity,
+        name: "🎉 ¡Disfruta de los eventos de Akarui Hikari! 🎉"
+    },
+    {
+        ...StatusActivity,
+        name: "🎮 ¡Juega con la comunidad de Akarui Hikari! 🎮"
+    },
+    {
+        ...StatusActivity,
+        name: "🌸 ¡Que viva Komi-san! 🌸"
     }
 ];
 

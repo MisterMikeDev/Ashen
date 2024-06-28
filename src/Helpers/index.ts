@@ -1,6 +1,13 @@
 export { ButtonsId, ButtonsType, ModalsId, ModalsType } from "./Enums";
 
-export { CheckBtn, WelcomeEmbed } from "./Components";
+export {
+    CheckBtn,
+    ReplyAskModal,
+    WelcomeEmbed,
+    AskEmbed,
+    DeleteBtn,
+    ReplyBtn
+} from "./Components";
 
 export {
     ClampNumbers,

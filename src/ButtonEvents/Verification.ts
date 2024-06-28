@@ -15,15 +15,17 @@ export const buttonEvent: ButtonEvent = {
         const UserHaveMemberRole = InteractionMember.cache.has(MemberRole);
 
         if (UserHaveMemberRole) {
-            return await interaction.editReply({
-                content: `${NoEmoji} | Ya tienes el rol de Miembro`
+            return await interaction.reply({
+                content: `${NoEmoji} | Ya tienes el rol de Miembro`,
+                ephemeral: true
             });
         }
 
         InteractionMember.add(MemberRole).catch(() => null);
 
-        await interaction.editReply({
-            content: `${YesEmoji} | Te has verificado correctamente`
+        await interaction.reply({
+            content: `${YesEmoji} | Te has verificado correctamente`,
+            ephemeral: true
         });
     }
 };

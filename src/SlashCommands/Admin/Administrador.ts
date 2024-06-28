@@ -7,6 +7,7 @@ import { Config } from "../../Data/Config";
 import { GenerateVerificationEmbed } from "./generate-verification-embed.cmd";
 import { GenerateRulesEmbed } from "./generate-rules-embed.cmd";
 import { GenerateWelcomeEmbed } from "./generate-welcome-embed.cmd";
+import { GenerateAskEmbed } from "./generate-ask-embed.cmd";
 
 const AdminsId = Config.DiscordBot.Admins;
 const { Subcommand } = ApplicationCommandOptionType;
@@ -29,6 +30,19 @@ export default new SlashCommandStructure({
             name: "generate-welcome-embed",
             description: "Genera el embed de bienvenida.",
             type: Subcommand
+        },
+        {
+            name: "generate-ask-embed",
+            description: "Genera el embed de pregunta.",
+            type: Subcommand,
+            options: [
+                {
+                    name: "ask",
+                    description: "La pregunta a realizar.",
+                    type: ApplicationCommandOptionType.String,
+                    required: true
+                }
+            ]
         }
     ],
     run: async ({ Ashen, interaction }) => {
@@ -51,6 +65,10 @@ export default new SlashCommandStructure({
             },
             "generate-welcome-embed": () => {
                 GenerateWelcomeEmbed(interaction);
+            },
+            "generate-ask-embed": () => {
+                const Ask = Int.getString("ask") || "";
+                GenerateAskEmbed(interaction, Ask);
             }
         };
 
